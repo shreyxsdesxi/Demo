@@ -1,0 +1,18 @@
+export interface Parameters{
+    parameterName : String,
+    dataType : String
+}
+
+
+<div>
+    {{parameterData}}
+
+    <table>
+        <tbody *ngFor = "let parameter of parameterData">
+                <td>{{parameter.parameterName}}</td>
+                <td>{{parameter.dataType}}</td>
+                <td><input type="{{parameter.dataType}}"></td>
+        </tbody>
+    </table>
+
+</div>
